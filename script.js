@@ -5,10 +5,13 @@ function initialize(){
 }
 
 function retrieveAndFormat(){
-    let input = textInput.value.replace(/\D/g,'');
+    let input = textInput.value;
+    if(input[0].toLowerCase() == "e") input = input.substring(1);
+
     let result = getNumberInfo(input)
-    if(result == null) return
     let resultString = ""
+    if(result == null) return
+    
     resultString = "E" + result.number + " "
     if(result.vegan == -1) resultString += "is NOT vegan"
     if(result.vegan == 0) resultString += "might not be vegan"
