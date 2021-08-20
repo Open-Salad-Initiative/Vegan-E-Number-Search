@@ -16,15 +16,16 @@ function retrieveAndFormat(){
     resultDescription.innerHTML = reesult.resultDescription;
 }
 
+function clearText(){
+    resultText.innerHTML = "";
+    resultDescription.innerHTML = "";
+}
+
 window.addEventListener('load', function () {
     initialize();
     textInput.addEventListener("keyup", function(event) {
-        // Number 13 is the "Enter" key on the keyboard
-        if (event.keyCode === 13) {
-          // Cancel the default action, if needed
-          event.preventDefault();
-          // Trigger the button element with a click
-          retrieveAndFormat();
-        }
+        clearText();
+        retrieveAndFormat();
       }); 
+      
 })
