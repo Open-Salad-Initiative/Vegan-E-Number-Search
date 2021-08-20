@@ -14,7 +14,7 @@ function retrieveAndFormat(){
     if(result.vegan == 0) resultString += "might not be vegan"
     if(result.vegan == 1) resultString += "is vegan"
     resultText.innerHTML = resultString;
-    resultDescription.innerHTML = result.resultDescription;
+    resultDescription.innerHTML = result.description;
 }
 
 function clearText(){
