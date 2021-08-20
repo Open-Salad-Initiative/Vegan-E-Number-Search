@@ -1,0 +1,52 @@
+html, body {margin: 0; height: 100%; overflow: hidden}
+body{
+    background-color: #cfcf9d;
+}
+
+.title{
+    font-size: 35px;
+    margin-bottom: -7px;
+}
+
+.texInput{
+    height: 50px;
+}
+
+input[type=text] {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 40px;
+    text-align: center; 
+  }
+
+.searchForm{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 10%;
+    width: 30%;
+    height: 200px;
+    text-align: center;
+}
+
+.bottomWave{
+    position:absolute; 
+    bottom:0;
+    margin-top: 55px;
+}
+
+.wrapper {
+    height: 300px;
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+p{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
