@@ -8,10 +8,6 @@ body{
     margin-bottom: -7px;
 }
 
-.texInput{
-    height: 50px;
-}
-
 input[type=text] {
     width: 40%;
     padding: 12px 20px;
@@ -19,6 +15,10 @@ input[type=text] {
     box-sizing: border-box;
     font-size: 40px;
     text-align: center; 
+    border: none; /* <-- This thing he| */
+    border:solid 1px #ccc;
+    border-radius: 25px;
+    width: 9%;
   }
 
 .searchForm{
@@ -28,7 +28,7 @@ input[type=text] {
     left: 0;
     right: 0;
     top: 10%;
-    width: 30%;
+    width: 100%;
     height: 200px;
     text-align: center;
 }
