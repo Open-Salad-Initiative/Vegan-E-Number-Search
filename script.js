@@ -6,6 +6,7 @@ function initialize(){
 
 function retrieveAndFormat(){
     let input = textInput.value;
+    if(input.length == 0) return
     if(input[0].toLowerCase() == "e") input = input.substring(1);
 
     let result = getNumberInfo(input)
@@ -17,7 +18,7 @@ function retrieveAndFormat(){
     if(result.vegan == 0) resultString += "might not be vegan"
     if(result.vegan == 1) resultString += "is vegan"
     resultText.innerHTML = resultString;
-    resultDescription.innerHTML = result.description;
+    resultDescription.innerHTML = result.name;
 }
 
 function clearText(){
