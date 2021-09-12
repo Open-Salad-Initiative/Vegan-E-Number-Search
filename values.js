@@ -2917,11 +2917,3 @@ vegan: 1,
 },
 ]
 
-function getNumberInfo(number){
-    for(let i=0; i<numbers.length; i++){
-        if(numbers[i].number == number){
-            return(numbers[i])
-        }
-    }
-    return null;
-}
