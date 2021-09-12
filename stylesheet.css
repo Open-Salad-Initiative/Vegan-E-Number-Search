@@ -3,6 +3,11 @@ body{
     background-color: #cfcf9d;
 }
 
+p{
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 .title{
     font-size: 35px;
     margin-bottom: -7px;
@@ -46,17 +51,22 @@ input[type=text] {
     align-items: flex-end;
 }
 
-p{
-    font-size: 40px;
+.description{
+    font-size: 29px;
     font-family: 'Josefin Sans', sans-serif;
 }
-
 
 @media only screen and (max-width: 1024px) {
     .title{
         font-size: 85px;
         margin-bottom: -7px;
     }
+
+    p{
+        font-size: 70px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+
 
     input[type=text] {
         padding: 12px 20px;
@@ -70,10 +80,9 @@ p{
         width: 30%;
         transition: 0.5s;
     }
-
-    p{
-        font-size: 70px;
+    
+    .description{
+        font-size: 50px;
         font-family: 'Josefin Sans', sans-serif;
     }
-    
 }
