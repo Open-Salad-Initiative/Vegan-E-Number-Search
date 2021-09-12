@@ -8,36 +8,18 @@ body{
     margin-bottom: -7px;
 }
 
-@media only screen and (min-width: 1024px) {
-    input[type=text] {
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        font-size: 40px;
-        text-align: center; 
-        border: none; /* <-- This thing he| */
-        border:solid 1px #ccc;
-        border-radius: 25px;
-        width: 9%;
-        transition: 0.5s;
-    }
+input[type=text] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    font-size: 40px;
+    text-align: center; 
+    border: none; /* <-- This thing he| */
+    border:solid 1px #ccc;
+    border-radius: 25px;
+    width: 9%;
+    transition: 0.5s;
 }
-
-@media only screen and (max-width: 1024px) {
-    input[type=text] {
-        padding: 12px 20px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        font-size: 40px;
-        text-align: center; 
-        border: none; /* <-- This thing he| */
-        border:solid 1px #ccc;
-        border-radius: 25px;
-        width: 30%;
-        transition: 0.5s;
-    }
-}
-
 
 .searchForm{
     position: absolute;
@@ -67,4 +49,31 @@ body{
 p{
     font-size: 40px;
     font-family: 'Josefin Sans', sans-serif;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .title{
+        font-size: 85px;
+        margin-bottom: -7px;
+    }
+
+    input[type=text] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        font-size: 60px;
+        text-align: center; 
+        border: none; /* <-- This thing he| */
+        border:solid 1px #ccc;
+        border-radius: 25px;
+        width: 30%;
+        transition: 0.5s;
+    }
+
+    p{
+        font-size: 70px;
+        font-family: 'Josefin Sans', sans-serif;
+    }
+    
 }
